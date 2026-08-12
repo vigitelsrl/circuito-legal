@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de Circuito Legal — Análisis, guías y actualidad sobre derecho digital, protección de datos, fintech y evidencia digital en República Dominicana.">
+    <meta name="keywords" content="blog derecho digital, ciberseguridad legal, fintech, protección de datos, evidencia digital, República Dominicana">
+    <meta property="og:title" content="Recursos | Circuito Legal">
+    <meta property="og:description" content="Análisis, guías y actualidad sobre derecho digital, protección de datos, fintech y evidencia digital en República Dominicana.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%230a1526'/><text x='50' y='67' font-family='serif' font-size='38' font-weight='bold' fill='%23D4AF37' text-anchor='middle'>CL</text></svg>">
+    <title>Recursos | Circuito Legal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#050a14',
+                            800: '#0a1526',
+                            700: '#112240',
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F3E5AB',
+                            dark: '#AA8C2C',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-white">
+
+    <!-- ============================================================ -->
+    <!-- HEADER (idéntico al del home)                                -->
+    <!-- ============================================================ -->
+    <header class="fixed top-0 w-full z-50 bg-navy-800/95 backdrop-blur-md border-b border-navy-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img src="img/lg3.png" alt="Circuito Legal" class="w-16 h-16 object-contain">
+                    <div class="flex flex-col">
+                        <span class="text-white font-serif font-semibold text-lg leading-tight tracking-wide">CIRCUITO LEGAL</span>
+                        <span class="text-[8px] text-slate-400 uppercase tracking-widest">Derecho Digital, Tecnología y Negocios</span>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#inicio" class="text-xs font-semibold text-slate-300 hover:text-white transition uppercase tracking-wider">Inicio</a>
+                    <a href="index.html#areas" class="text-xs font-semibold text-slate-300 hover:text-white transition uppercase tracking-wider">Áreas de Práctica</a>
+                    <a href="index.html#sectores" class="text-xs font-semibold text-slate-300 hover:text-white transition uppercase tracking-wider">Sectores</a>
+                    <a href="blog.html" class="text-xs font-semibold text-gold border-b-2 border-gold pb-1 uppercase tracking-wider">Recursos</a>
+                    <a href="index.html#equipo" class="text-xs font-semibold text-slate-300 hover:text-white transition uppercase tracking-wider">Equipo</a>
+                    <a href="index.html#contacto" class="text-xs font-semibold text-slate-300 hover:text-white transition uppercase tracking-wider">Contacto</a>
+
+                    <a href="index.html#contacto" class="ml-4 px-5 py-2 border border-gold text-gold text-xs font-bold uppercase tracking-wider hover:bg-gold hover:text-navy-900 transition duration-300">
+                        Agendar Consulta
+                    </a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gold hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-800 border-b border-navy-700 px-4 pt-2 pb-4">
+            <a href="index.html#inicio" class="block px-3 py-2 text-sm text-slate-300">Inicio</a>
+            <a href="index.html#areas" class="block px-3 py-2 text-sm text-slate-300">Áreas de Práctica</a>
+            <a href="index.html#sectores" class="block px-3 py-2 text-sm text-slate-300">Sectores</a>
+            <a href="blog.html" class="block px-3 py-2 text-sm text-gold font-medium">Recursos</a>
+            <a href="index.html#equipo" class="block px-3 py-2 text-sm text-slate-300">Equipo</a>
+            <a href="index.html#contacto" class="block px-3 py-2 text-sm text-slate-300">Contacto</a>
+            <a href="index.html#contacto" class="block mt-4 px-4 py-2 text-center text-xs font-bold text-navy-900 bg-gold uppercase">Agendar Consulta</a>
+        </div>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- HERO DEL BLOG                                                 -->
+    <!-- ============================================================ -->
+    <section class="pt-32 pb-16 bg-navy-800 relative overflow-hidden">
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full opacity-20 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <span class="text-gold text-xs font-bold uppercase tracking-widest">Recursos</span>
+            <h1 class="text-4xl sm:text-5xl font-serif text-white mt-2 mb-6 leading-tight">
+                ANÁLISIS Y ACTUALIDAD EN <span class="text-gold">DERECHO DIGITAL.</span>
+            </h1>
+            <p class="text-slate-300 text-lg font-light max-w-2xl leading-relaxed">
+                Guías prácticas, análisis normativo y actualidad jurídica para empresas y equipos legales que operan en la economía digital dominicana.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FILTROS DE CATEGORÍA                                          -->
+    <!-- ============================================================ -->
+    <section class="bg-[#F8F9FA] border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div id="filtros" class="flex flex-wrap gap-3">
+                <button data-cat="todos" class="filtro-btn px-4 py-2 text-xs font-bold uppercase tracking-wider border border-navy-800 bg-navy-800 text-white transition">Todos</button>
+                <button data-cat="evidencia" class="filtro-btn px-4 py-2 text-xs font-bold uppercase tracking-wider border border-slate-300 text-slate-600 hover:border-navy-800 hover:text-navy-800 transition">Evidencia Digital</button>
+                <button data-cat="datos" class="filtro-btn px-4 py-2 text-xs font-bold uppercase tracking-wider border border-slate-300 text-slate-600 hover:border-navy-800 hover:text-navy-800 transition">Protección de Datos</button>
+                <button data-cat="digital" class="filtro-btn px-4 py-2 text-xs font-bold uppercase tracking-wider border border-slate-300 text-slate-600 hover:border-navy-800 hover:text-navy-800 transition">Derecho Digital</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ARTÍCULO DESTACADO                                            -->
+    <!-- ============================================================ -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="blog/whatsapp-como-prueba.html" class="article-card group grid grid-cols-1 lg:grid-cols-2 gap-0 border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition" data-cat="evidencia">
+                <div class="bg-navy-800 relative flex items-center justify-center p-16 min-h-[280px]">
+                    <div class="absolute inset-0 bg-gradient-to-br from-navy-700 to-navy-900"></div>
+                    <svg class="w-24 h-24 text-gold relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </div>
+                <div class="p-10 flex flex-col justify-center">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="bg-gold/10 text-gold-dark text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-sm">Evidencia Digital</span>
+                        <span class="text-slate-400 text-xs">15 de junio, 2026</span>
+                    </div>
+                    <h2 class="text-2xl lg:text-3xl font-serif text-navy-800 mb-4 leading-snug group-hover:text-gold transition">
+                        ¿Es válido un chat de WhatsApp como prueba en un tribunal dominicano?
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Cómo evalúan los tribunales dominicanos la autenticidad de conversaciones de WhatsApp, qué exige la cadena de custodia digital y qué errores invalidan una prueba electrónica antes de llegar a juicio.
+                    </p>
+                    <span class="text-navy-800 text-xs font-bold uppercase tracking-wider flex items-center group-hover:text-gold transition">Leer artículo <span class="ml-2 transition group-hover:translate-x-1">→</span></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- GRID DE ARTÍCULOS                                             -->
+    <!-- ============================================================ -->
+    <section class="bg-[#F8F9FA] py-16 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="grid-articulos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <a href="blog/ley-172-13-empresas.html" class="article-card group bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition" data-cat="datos">
+                    <div class="h-44 bg-navy-800 relative flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-navy-700 to-navy-900"></div>
+                        <svg class="w-14 h-14 text-gold relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="bg-gold/10 text-gold-dark text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm">Protección de Datos</span>
+                        </div>
+                        <h3 class="text-navy-800 font-serif font-bold text-lg mb-2 leading-snug group-hover:text-gold transition">Ley 172-13: lo que toda empresa dominicana debe saber</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-4">Obligaciones clave, bases legales para el tratamiento de datos y pasos prácticos de cumplimiento para empresas que operan en República Dominicana.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400 text-[11px]">8 de junio, 2026</span>
+                            <span class="text-navy-800 text-xs font-bold uppercase tracking-wider group-hover:text-gold transition">Leer →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="blog/firma-electronica-contratos.html" class="article-card group bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition" data-cat="digital">
+                    <div class="h-44 bg-navy-800 relative flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-navy-700 to-navy-900"></div>
+                        <svg class="w-14 h-14 text-gold relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="bg-gold/10 text-gold-dark text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm">Derecho Digital</span>
+                        </div>
+                        <h3 class="text-navy-800 font-serif font-bold text-lg mb-2 leading-snug group-hover:text-gold transition">Firma electrónica en RD: validez legal y buenas prácticas</h3>
+                        <p class="text-slate-500 text-xs leading-relaxed mb-4">Qué exige la Ley 126-02 para que un contrato firmado electrónicamente sea plenamente exigible, y qué evidencia técnica conviene conservar.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-400 text-[11px]">1 de junio, 2026</span>
+                            <span class="text-navy-800 text-xs font-bold uppercase tracking-wider group-hover:text-gold transition">Leer →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Placeholder para próximo artículo -->
+                <div class="article-card bg-white border border-dashed border-slate-300 rounded-lg flex flex-col items-center justify-center p-10 text-center min-h-[280px]" data-cat="todos">
+                    <svg class="w-8 h-8 text-slate-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"/></svg>
+                    <p class="text-slate-400 text-xs uppercase tracking-wider font-semibold">Próximo artículo en camino</p>
+                </div>
+
+            </div>
+
+            <p id="sin-resultados" class="hidden text-center text-slate-400 text-sm py-16">No hay artículos en esta categoría todavía.</p>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CTA FINAL                                                     -->
+    <!-- ============================================================ -->
+    <section class="bg-navy-800 py-16">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-serif text-white mb-4">¿Tu empresa enfrenta un desafío legal-tecnológico específico?</h2>
+            <p class="text-slate-400 text-sm mb-8">Cada caso es distinto. Conversemos sobre tu situación particular.</p>
+            <a href="index.html#contacto" class="inline-flex px-8 py-3 bg-gold text-navy-900 text-sm font-bold uppercase tracking-wider hover:bg-white transition">
+                Agendar Consulta <span class="ml-2">→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER (idéntico al del home)                                 -->
+    <!-- ============================================================ -->
+    <footer class="bg-navy-900 py-8 border-t border-navy-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="img/lg3.png" alt="Circuito Legal" class="w-16 h-16 object-contain">
+                    <span class="text-slate-500 text-xs">© 2026 Circuito Legal. Todos los derechos reservados.</span>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-500 hover:text-gold text-xs transition">Política de Privacidad</a>
+                    <a href="#" class="text-slate-500 hover:text-gold text-xs transition">Términos de Uso</a>
+                    <a href="#" class="text-slate-500 hover:text-gold text-xs transition">Aviso Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle menú móvil
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+
+        // Filtro de categorías (cliente, sin backend)
+        const filtroBtns = document.querySelectorAll('.filtro-btn');
+        const cards = document.querySelectorAll('.article-card');
+        const sinResultados = document.getElementById('sin-resultados');
+
+        filtroBtns.forEach(b => {
+            b.addEventListener('click', () => {
+                filtroBtns.forEach(x => {
+                    x.classList.remove('bg-navy-800', 'text-white', 'border-navy-800');
+                    x.classList.add('border-slate-300', 'text-slate-600');
+                });
+                b.classList.add('bg-navy-800', 'text-white', 'border-navy-800');
+                b.classList.remove('border-slate-300', 'text-slate-600');
+
+                const cat = b.dataset.cat;
+                let visibles = 0;
+                cards.forEach(card => {
+                    const match = cat === 'todos' || card.dataset.cat === cat;
+                    card.style.display = match ? '' : 'none';
+                    if (match) visibles++;
+                });
+                sinResultados.classList.toggle('hidden', visibles > 0);
+            });
+        });
+    </script>
+</body>
+</html>
